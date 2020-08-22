@@ -16,13 +16,13 @@ namespace Numeroaletra.Helpers
             var decimales = Convert.ToInt32(Math.Round((numberAsString - entero) * 100, 2));
             if (decimales > 0)
             {
-                dec = "  CON " + decimales.ToString() + "/100";
+                dec = " CON " + decimales.ToString() + "/100";
                 //dec = $" PESOS {decimales:0,0} /100";
             }
             //Código agregado por mí
             else
             {
-                dec = "  CON " + decimales.ToString() + "/100";
+                dec = " CON " + decimales.ToString() + "/100";
                 //dec = $" PESOS {decimales:0,0} /100";
             }
             var res = NumeroALetras(Convert.ToDouble(entero)) + dec;
